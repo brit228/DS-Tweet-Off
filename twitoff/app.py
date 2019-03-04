@@ -11,6 +11,6 @@ def create_app():
     @app.route("/")
     def home():
         user = request.args.get('user')
-        return str(t_user)
+        return "Hello, {}!".format(user)
 
     return app
